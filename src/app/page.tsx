@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 font-sans">
       <Head> {/* Or directly in app/layout.tsx for app router */}
-        <title>Rayvel Taruc's Portfolio</title>
+        <title>Rayvel Taruc&aposs Portfolio</title>
         <meta name="description" content="Showcasing my web development projects and skills." />
       </Head>
 
@@ -35,7 +35,7 @@ export default function Home() {
             priority
           />
           <h2 className="text-5xl font-extrabold text-white mb-4">
-            Hello, I'm <span className="text-teal-400">Rayvel Taruc</span>
+            Hello, I&aposm <span className="text-teal-400">Rayvel Taruc</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
             A passionate Web Developer specializing in React, Next.js, and Tailwind CSS.
