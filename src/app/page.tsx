@@ -26,10 +26,13 @@ export default function Home() {
       {/* Hero Section */}
       <section id="hero" className="py-20 text-center bg-gray-850">
         <div className="container mx-auto px-4">
-          <img
+          <Image
             src="/profile.jpg" // Make sure you have a 'profile.jpg' in your public directory
             alt="Rayvel Taruc"
+            width={128}
+            height={128}
             className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-teal-500 shadow-lg"
+            priority
           />
           <h2 className="text-5xl font-extrabold text-white mb-4">
             Hello, I'm <span className="text-teal-400">Rayvel Taruc</span>
