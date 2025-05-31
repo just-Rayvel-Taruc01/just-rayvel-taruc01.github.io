@@ -11,7 +11,7 @@
   "export": "next export",
   "start": "next start",
   "lint": "next lint",
-  "predeploy": "cross-env DEPLOY_TARGET=gh-pages NODE_ENV=production npm run build",
+  "predeploy": "cross-env NODE_ENV=production npm run build",
   "deploy": "gh-pages -d out"
 },
   "dependencies": {
