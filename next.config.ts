@@ -2,10 +2,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: '/just-rayvel-taruc01.github.io',
+  assetPrefix: '/just-rayvel-taruc01.github.io/',
   output: 'export',
   reactStrictMode: true,
-  // Removed basePath and assetPrefix as per previous discussion
-
   images: {
     unoptimized: true,
   },
