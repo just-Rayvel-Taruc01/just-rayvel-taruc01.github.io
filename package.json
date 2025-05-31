@@ -7,13 +7,14 @@
   "homepage": "https://just-rayvel-taruc01.github.io",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out"
   },
   "dependencies": {
+    "@tailwindcss/cli": "^4.1.8",
     "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
