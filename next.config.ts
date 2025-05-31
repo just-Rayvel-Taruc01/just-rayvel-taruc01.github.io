@@ -7,7 +7,7 @@ const nextConfig = {
     unoptimized: true,
   },
   // Important for GH Pages static export to work with relative paths
-  assetPrefix: './',
+  assetPrefix: '/',
   basePath: '',
 };
 
