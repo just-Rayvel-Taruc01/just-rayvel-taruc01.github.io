@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100 font-sans">
       <Head> {/* Or directly in app/layout.tsx for app router */}
-        <title>Rayvel Taruc&aposs Portfolio</title>
+        <title>Rayvel Taruc&apos;s Portfolio</title>
         <meta name="description" content="Showcasing my web development projects and skills." />
       </Head>
 
@@ -35,7 +35,7 @@ export default function Home() {
             priority
           />
           <h2 className="text-5xl font-extrabold text-white mb-4">
-            Hello, I&aposm <span className="text-teal-400">Rayvel Taruc</span>
+            Hello, I&apos;m <span className="text-teal-400">Rayvel Taruc</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
             A passionate Web Developer specializing in React, Next.js, and Tailwind CSS.
@@ -55,13 +55,14 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center text-teal-400 mb-12">About Me</h2>
           <div className="max-w-3xl mx-auto text-lg leading-relaxed text-gray-300">
             <p className="mb-4">
-              I am a dedicated web developer with expertise in building responsive and user-friendly web applications. My journey into web development began with a fascination for how digital experiences come to life, and I've been hooked ever since.
+              I am a dedicated web developer with expertise in building responsive and user-friendly web applications. 
+              My journey into web development began with a fascination for how digital experiences come to life, and I&apos;ve been hooked ever since.
             </p>
             <p className="mb-4">
               I have a strong foundation in front-end technologies like React, Next.js, and of course, styling with Tailwind CSS. I enjoy tackling complex problems and constantly learning new tools and techniques to deliver high-quality code.
             </p>
             <p>
-              When I'm not coding, you can find me exploring new tech trends, contributing to open source, or enjoying outdoor activities.
+              When I&apos;m not coding, you can find me exploring new tech trends, contributing to open source, or enjoying outdoor activities.
             </p>
           </div>
         </div>
@@ -131,7 +132,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-teal-400 mb-8">Get In Touch</h2>
           <p className="text-xl text-gray-300 mb-8">
-            I'm currently open to new opportunities and collaborations. Feel free to reach out!
+            I&apos;m currently open to new opportunities and collaborations. Feel free to reach out!
           </p>
           <a
             href="mailto:your.email@example.com" // Replace with your email
