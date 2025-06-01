@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
+const isVercel = !!process.env.VERCEL;
 
 const nextConfig = {
   output: 'export',
@@ -8,8 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? '/just-rayvel-taruc01.github.io' : '',
-  assetPrefix: isProd ? '/just-rayvel-taruc01.github.io/' : '',
+  basePath: isProd && !isVercel ? '/just-rayvel-taruc01.github.io' : '',
+  assetPrefix: isProd && !isVercel ? '/just-rayvel-taruc01.github.io/' : '',
 };
 
 module.exports = nextConfig;
