@@ -7,8 +7,23 @@ import { Navigation } from "@/components/Navigation";
 
 export default function Home() {
   return (
-    <div className="bg-[var(--background)] text-[var(--body)] min-h-screen overflow-x-hidden">
-      <main className="relative flex flex-col max-w-7xl mx-auto gap-5 p-4 md:p-6 ">
+    <div className="bg-[var(--background)] text-[var(--body)] min-h-screen overflow-x-hidden relative">
+      {/* Background Blobs */}
+      <div className="pointer-events-none fixed inset-0 overflow-hidden">
+        {/* Main Blob */}
+        <div className="absolute top-[60%] right-[-100px] w-[400px] h-[400px] rounded-full blur-3xl 
+                        bg-[#e0d6ff] dark:bg-[#7f5af0]/30 z-[1]" />
+
+        {/* Secondary Blob */}
+        <div className="absolute top-[20%] left-[-150px] w-[300px] h-[300px] rounded-full blur-2xl 
+                        bg-[#ffe0cc] dark:bg-[#00a14b]/20 z-[1]" />
+
+        {/* Ambient Large Blob */}
+        <div className="absolute bottom-[-100px] left-[50%] translate-x-[-10%] w-[600px] h-[600px] rounded-full blur-[160px] 
+                        bg-[#fceff9] dark:bg-[#3c3f75]/20 z-[1]" />
+      </div>
+
+      <main className="relative flex flex-col max-w-7xl mx-auto gap-5 p-4 md:p-6 z-10">
         {/* Sidebar */}
         <aside className="lg:fixed top-0 lg:h-screen 
                           lg:w-72 rounded-xl max-h-screen overflow-y-auto shadow-md lg:top-5 bg-[var(--card-bg)]
@@ -22,7 +37,7 @@ export default function Home() {
           <section id="about" className="mb-5">
             <About />
           </section>
-          
+
           <section id="project" className="mb-5">
             <Portfolio />
           </section>
@@ -37,5 +52,6 @@ export default function Home() {
         </div>
       </main>
     </div>
+
   );
 }

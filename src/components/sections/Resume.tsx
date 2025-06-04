@@ -6,7 +6,7 @@ export function Resume() {
       <div className="mb-4">
         <h3 className="text-xl font-semibold mb-1">Education</h3>
         <p>Bachelor of Science in Information Technology</p>
-        <p>Don Honorio Ventura State University (2021–Present)</p>
+        <p>Don Honorio Ventura State University – Candaba Campus (2021–2025)</p>
       </div>
 
       <div className="mb-4">
