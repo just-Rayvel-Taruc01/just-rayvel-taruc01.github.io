@@ -9,8 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd && !isVercel ? '/just-rayvel-taruc01.github.io' : '',
-  assetPrefix: isProd && !isVercel ? '/just-rayvel-taruc01.github.io/' : '',
+  basePath: isProd && !isVercel ? '/just-rayvel-taruc01' : '',
+  assetPrefix: isProd && !isVercel ? '/just-rayvel-taruc01/' : '',
 };
 
 module.exports = nextConfig;
