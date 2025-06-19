@@ -17,7 +17,7 @@ export function DarkModeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="p-2 bg-secondary text-background rounded shadow"
+      className="p-2 bg-secondary text-background rounded shadow hover:text-(--accent) transition-colors duration-300 flex items-center justify-center"
     >
       {theme === 'dark' ? <FaSun size={20} /> : <FaMoon size={20} />}
     </button>

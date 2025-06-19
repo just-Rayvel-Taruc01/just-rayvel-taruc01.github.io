@@ -18,10 +18,12 @@ body {
 
   --headline: #0f0e17;
   --paragraph: #2e2f3e;
-  --accent: #ff8e3c;
+  --accent: #6c5ce7; 
 
   --card-tag-text: #0f0e17;
   --card-paragraph: #2e2f3e;
+  
+  --accent-gradient: linear-gradient(135deg, #89aae3, #fbc2eb);
 }
 
 /* Dark Theme */
@@ -32,8 +34,11 @@ body {
 
   --headline: #fffffe;
   --paragraph: #94a1b2;
-  --accent: #00a14b;
+  --accent: #16a5d9; 
+
 
   --card-tag-text: #fffffe;
   --card-paragraph: #94a1b2;
+
+  --accent-gradient: linear-gradient(135deg, #00cec9, #6c5ce7); 
 }

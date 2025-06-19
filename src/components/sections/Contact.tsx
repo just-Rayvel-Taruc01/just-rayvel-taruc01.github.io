@@ -10,7 +10,7 @@ export function Contact() {
         </li>
         <li className="flex items-center gap-2">
           <FiMail />{" "}
-          <a href="mailto:rayvelm.taruc02@gmail.com" className="hover:text-[var(--accent)]">
+          <a href="mailto:rayvelm.taruc02@gmail.com" className="hover:text-(--accent)]">
             rayvelm.taruc02@gmail.com
           </a>
         </li>

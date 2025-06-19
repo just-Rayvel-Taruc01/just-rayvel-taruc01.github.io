@@ -1,6 +1,6 @@
 import { About } from "@/components/sections/About";
 import { Resume } from "@/components/sections/Resume";
-import { Portfolio } from "@/components/sections/Portfolio";
+import { Projects } from "@/components/sections/Projects";
 import { Contact } from "@/components/sections/Contact";
 import { Sidebar } from "@/components/SideBar";
 import { Navigation } from "@/components/Navigation";
@@ -23,14 +23,15 @@ export default function Home() {
                         bg-[#fceff9] dark:bg-[#3c3f75]/20 z-[1]" />
       </div>
 
-      <main className="relative flex flex-col max-w-7xl mx-auto gap-5 p-4 md:p-6 z-10">
+      <main className="relative flex flex-col max-w-7xl xl:max-w-11/12 mx-auto gap-5 p-4 md:p-6 z-10">
         {/* Sidebar */}
-        <aside className="lg:fixed top-0 lg:h-screen 
-                          lg:w-72 rounded-xl max-h-screen overflow-y-auto shadow-md lg:top-5 bg-[var(--card-bg)]
+        <aside className="lg:fixed top-0 lg:h-11/12 
+                          lg:w-72 rounded-xl overflow-y-auto shadow-md lg:top-5 bg-[var(--card-bg)]
                           md:w-full md:h-auto">
           <Sidebar />
         </aside>
 
+        {/* Main Content */}
         <div className="flex-1 scroll-smooth lg:ml-76 ml-0">
           <Navigation />
 
@@ -39,7 +40,7 @@ export default function Home() {
           </section>
 
           <section id="project" className="mb-5">
-            <Portfolio />
+            <Projects />
           </section>
 
           <section id="resume" className="mb-5">

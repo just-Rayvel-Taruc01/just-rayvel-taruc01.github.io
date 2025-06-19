@@ -8,7 +8,7 @@ import { DarkModeToggle } from "@/components/ui/DarkModeToggle";
 export function Sidebar() {
   return (
     <div className="flex flex-col md:flex-row lg:flex-col p-6 text-[var(--body)]
-                    gap-6 md:gap-12 justify-center items-center">
+                    gap-6 md:gap-12 lg:gap-4 justify-center items-center">
       {/* Profile */}
       <div className="flex items-center">
         <Image
@@ -23,16 +23,18 @@ export function Sidebar() {
       {/* Contact Info */}
       <div className="">
         <h2 className="text-3xl md:text-4xl lg:text-3xl font-bold text-[var(--headline)] 
-                       text-center lg:text-center md:text-start pb-4 md:pb-2 lg:pb-5"
+                       text-center lg:text-center md:text-start pb-4 md:pb-2 lg:pb-4"
         >Rayvel Taruc</h2>
 
-        <ul className="lg:space-y-3 md:space-y-1 space-y-2 text-sm">
+        <div className="text-sm text-center md:text-start lg:text-center pb-3 lg:border-b-1 md:border-b-0 border-b-1">Web Developer | UX/UI Designer</div>
+
+        <ul className="mt-3 md:mt-0 lg:mt-3 lg:space-y-3 md:space-y-1 space-y-2 text-sm">
           <li className="flex items-center gap-2">
             <FiPhone /> <span>(+63) 928 227 7066</span>
           </li>
           <li className="flex items-center gap-2">
             <FiMail />
-            <a href="mailto:rayvelm.taruc02@gmail.com" className="hover:text-[var(--accent)]">
+            <a href="mailto:rayvelm.taruc02@gmail.com" className="hover:text-(--accent-gradient)">
               rayvelm.taruc02@gmail.com
             </a>
           </li>

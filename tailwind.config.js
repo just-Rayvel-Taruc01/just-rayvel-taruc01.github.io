@@ -19,7 +19,8 @@ module.exports = {
         },
         headline: "var(--headline)",
         paragraph: "var(--paragraph)",
-        accent: "var(--accent)",  
+        accent: "var(--accent)",
+        accentgradient: "var(--accent-gradient)"
       },
     },
   },

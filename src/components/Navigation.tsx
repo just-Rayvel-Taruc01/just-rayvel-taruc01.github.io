@@ -17,7 +17,7 @@ export function Navigation() {
         });
       },
       {
-        rootMargin: "-20% 0px -60% 0px",
+        rootMargin: "-20% 0px -80% 0px",
         threshold: 0.1,
       }
     );
@@ -33,7 +33,7 @@ export function Navigation() {
   return (
     <div className=" flex lg:justify-end justify-center">
       <nav
-                   className="fixed text-sm flex justify-center p-2 bg-[var(--card-bg)] rounded-t-xl
+                   className="fixed z-10 text-sm flex justify-center p-2 bg-[var(--card-bg)] rounded-t-xl
                               shadow-md border-t-2 bottom-0  right-0 left-0 gap-2 md:gap-4                    
                                   
                               lg:text-base lg:rounded-lg lg:border-1 lg:bottom-auto lg:right-auto lg:left-auto" 
@@ -44,7 +44,7 @@ export function Navigation() {
             href={`#${id}`}
             className={`px-2 md:px-3 lg:px-4 py-1 rounded-full transition-all ${
               active === id
-                ? "bg-[var(--accent)] text-white shadow"
+                ? "[background:var(--accent-gradient)] bg-clip-text shadow"
                 : "hover:text-[var(--accent)]"
             }`}
           >
