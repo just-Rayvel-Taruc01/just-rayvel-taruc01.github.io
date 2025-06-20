@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
@@ -34,7 +33,7 @@ export function Sidebar() {
           </li>
           <li className="flex items-center gap-2">
             <FiMail />
-            <a href="mailto:rayvelm.taruc02@gmail.com" className="hover:text-(--accent-gradient)">
+            <a href="mailto:rayvelm.taruc02@gmail.com" className="hover:text-(--accent)">
               rayvelm.taruc02@gmail.com
             </a>
           </li>

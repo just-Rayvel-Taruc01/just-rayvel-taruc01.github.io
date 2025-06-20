@@ -23,6 +23,7 @@ body {
   --card-tag-text: #0f0e17;
   --card-paragraph: #2e2f3e;
   
+  --contact-card-bg: #eceaea;
   --accent-gradient: linear-gradient(135deg, #89aae3, #fbc2eb);
 }
 
@@ -30,7 +31,7 @@ body {
 .dark {
   --background: #242629;
   --card-bg: #16161a;
-  --card-tag-bg: #7f5af0;
+  --card-tag-bg: #5938bc;
 
   --headline: #fffffe;
   --paragraph: #94a1b2;
@@ -40,5 +41,13 @@ body {
   --card-tag-text: #fffffe;
   --card-paragraph: #94a1b2;
 
+  --contact-card-bg: #222024;
   --accent-gradient: linear-gradient(135deg, #00cec9, #6c5ce7); 
+}
+
+.text-gradient {
+  background-image: var(--accent-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }

@@ -20,7 +20,8 @@ module.exports = {
         headline: "var(--headline)",
         paragraph: "var(--paragraph)",
         accent: "var(--accent)",
-        accentgradient: "var(--accent-gradient)"
+        accentgradient: "var(--accent-gradient)",
+        contactCardBg: "var(--contact-card-bg)"
       },
     },
   },
