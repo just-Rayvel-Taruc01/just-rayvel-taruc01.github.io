@@ -33,7 +33,7 @@ export function Navigation() {
   return (
     <div className=" flex lg:justify-end justify-center">
       <nav
-                   className="fixed z-10 text-sm flex justify-center p-2 bg-[var(--card-bg)] rounded-t-xl
+                   className="fixed z-20 text-sm flex justify-center p-2 bg-[var(--card-bg)] rounded-t-xl
                               shadow-md border-t-2 bottom-0  right-0 left-0 gap-2 md:gap-4                    
                                   
                               lg:text-base lg:rounded-lg lg:border-1 lg:bottom-auto lg:right-auto lg:left-auto" 

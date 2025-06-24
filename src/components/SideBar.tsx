@@ -31,14 +31,14 @@ export function Sidebar() {
           <li className="flex items-center gap-2">
             <FiPhone /> <span>(+63) 928 227 7066</span>
           </li>
-          <li className="flex items-center gap-2">
+          <li className="flex items-center gap-2 hover:text-[var(--accent)]">
             <FiMail />
-            <a href="mailto:rayvelm.taruc02@gmail.com" className="hover:text-(--accent)">
+            <a href="mailto:rayvelm.taruc02@gmail.com" className="">
               rayvelm.taruc02@gmail.com
             </a>
           </li>
           <li className="flex items-center gap-2">
-            <FiMapPin /> <span>Purok 2, San Roque, San Luis, Pampanga</span>
+            <FiMapPin /> <span>San Luis, Pampanga</span>
           </li>
         </ul>
 
