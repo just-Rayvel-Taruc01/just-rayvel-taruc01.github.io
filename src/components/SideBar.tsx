@@ -6,7 +6,7 @@ import { DarkModeToggle } from "@/components/ui/DarkModeToggle";
 
 export function Sidebar() {
   return (
-    <div className="flex flex-col md:flex-row lg:flex-col p-6 text-[var(--body)]
+    <div className="flex flex-col md:flex-row lg:flex-col p-4 text-[var(--body)]
                     gap-6 md:gap-12 lg:gap-4 justify-center items-center">
       {/* Profile */}
       <div className="flex items-center">
@@ -25,7 +25,7 @@ export function Sidebar() {
                        text-center lg:text-center md:text-start pb-4 md:pb-2 lg:pb-4"
         >Rayvel Taruc</h2>
 
-        <div className="text-sm text-center md:text-start lg:text-center pb-3 lg:border-b-1 md:border-b-0 border-b-1">Web Developer | UX/UI Designer</div>
+        <div className="text-sm text-center md:text-start lg:text-center pb-3 lg:border-b-1 md:border-b-0 border-b-1">Developer | UX/UI Designer</div>
 
         <ul className="mt-3 md:mt-0 lg:mt-3 lg:space-y-3 md:space-y-1 space-y-2 text-sm">
           <li className="flex items-center gap-2">
