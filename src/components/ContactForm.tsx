@@ -12,7 +12,7 @@ export function ContactForm() {
       formRef.current?.reset();
       setShowModal(true);
       launchConfetti();
-      setTimeout(() => setShowModal(false), 4000); // Auto close modal
+      setTimeout(() => setShowModal(false), 9000); // Auto close modal
     }, 100); // Delay to allow form submission to complete
   };
 
@@ -56,8 +56,8 @@ export function ContactForm() {
           className="grid grid-cols-1 gap-4 mt-6"
         >
           {/* Hidden FormSubmit config */}
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="box" />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_subject" value="New Contact Message" />
 
           {/* Honeypot */}
@@ -98,27 +98,50 @@ export function ContactForm() {
         {showModal && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-lg bg-black/30"
-            onClick={() => setShowModal(false)} // Optional: click outside to close
+            onClick={() => setShowModal(false)} // Optional: close on background click
           >
             <div
               className="[background:var(--accent-gradient)] text-[var(--card-tag-text)] rounded-lg p-6 shadow-lg text-center max-w-sm mx-auto relative"
-              onClick={(e) => e.stopPropagation()} // Prevent outside click from closing it
+              onClick={(e) => e.stopPropagation()} // Prevent background click from closing
             >
-              {/* ✖ Close Button */}
+              {/* ✖ Close Button (SVG) */}
               <button
                 onClick={() => setShowModal(false)}
-                className="absolute top-2 right-2 text-white hover:text-gray-200 text-xl font-bold focus:outline-none"
+                className="absolute top-2 right-2 text-white hover:text-gray-200 p-1"
                 aria-label="Close"
               >
-                ✖
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
               </button>
 
-              <h2 className="text-2xl font-semibold mb-2">✅ Sent!</h2>
-              <p>Your message has been delivered.</p>
+              {/* ✅ Check Icon (SVG) */}
+              <div className="flex justify-center mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-12 h-12 text-white"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.707a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+
+              <h2 className="text-2xl font-semibold mb-1">Message Sent</h2>
+              <p>Your message has been delivered successfully.</p>
             </div>
           </div>
         )}
-
       </div>
     </div>
   );
