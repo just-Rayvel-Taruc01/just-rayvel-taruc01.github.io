@@ -1,7 +1,7 @@
 # 💼 Rayvel Taruc — Developer Portfolio
 
 Welcome to my personal developer portfolio!  
-Built with **Next.js**, **Tailwind CSS**, and **TypeScript**, this project showcases my skills, experience, and projects as a developer and IT student.
+Built with Next.js, Tailwind CSS, and TypeScript, this project showcases my skills, experience, and projects as a developer and IT student.
 
 ---
 
@@ -20,13 +20,13 @@ Built with **Next.js**, **Tailwind CSS**, and **TypeScript**, this project showc
 
 ## 🛠 Tech Stack
 
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Language**: TypeScript
-- **Forms**: [Formspree](https://formspree.io/)
-- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
-- **Animation**: [canvas-confetti](https://www.npmjs.com/package/canvas-confetti)
-- **Deployment**: GitHub Pages & Vercel
+- Framework: [Next.js](https://nextjs.org/)
+- Styling: [Tailwind CSS](https://tailwindcss.com/)
+- Language: TypeScript
+- Forms: [Formspree](https://formspree.io/)
+- Icons: [React Icons](https://react-icons.github.io/react-icons/)
+- Animation: [canvas-confetti](https://www.npmjs.com/package/canvas-confetti)
+- Deployment: GitHub Pages & Vercel
 
 ---
 
@@ -81,8 +81,8 @@ This project is open-source and free to use for educational and portfolio purpos
 ## 🙋‍♂️ Contact
 
 Feel free to reach out via the contact form on the website or email me directly at  
-📧 **rayvel.dev@gmail.com**
+📧 rayvel.dev@gmail.com
 
 ---
 
-_Designed & built by **Rayvel Taruc**_
+_Designed & built by Rayvel Taruc_
