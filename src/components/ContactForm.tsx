@@ -8,10 +8,12 @@ export function ContactForm() {
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = () => {
-    formRef.current?.reset();
-    setShowModal(true);
-    launchConfetti();
-    setTimeout(() => setShowModal(false), 4000); // Auto close modal
+    setTimeout(() => {
+      formRef.current?.reset();
+      setShowModal(true);
+      launchConfetti();
+      setTimeout(() => setShowModal(false), 4000); // Auto close modal
+    }, 100); // Delay to allow form submission to complete
   };
 
   const launchConfetti = () => {
@@ -30,6 +32,19 @@ export function ContactForm() {
           name="hidden_iframe"
           id="hidden_iframe"
           style={{ display: "none" }}
+        ></iframe>
+
+        <iframe
+          name="hidden_iframe"
+          id="hidden_iframe"
+          style={{ display: "none" }}
+          onLoad={() => {
+            // This fires after the form is submitted
+            formRef.current?.reset();
+            setShowModal(true);
+            launchConfetti();
+            setTimeout(() => setShowModal(false), 10000);
+          }}
         ></iframe>
 
         <form
@@ -81,13 +96,29 @@ export function ContactForm() {
 
         {/* Modal */}
         {showModal && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-lg bg-opacity-50">
-            <div className="[background:var(--accent-gradient)] text-(--card-tag-text) rounded-lg p-6 shadow-lg text-center max-w-sm mx-auto">
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-lg bg-black/30"
+            onClick={() => setShowModal(false)} // Optional: click outside to close
+          >
+            <div
+              className="[background:var(--accent-gradient)] text-[var(--card-tag-text)] rounded-lg p-6 shadow-lg text-center max-w-sm mx-auto relative"
+              onClick={(e) => e.stopPropagation()} // Prevent outside click from closing it
+            >
+              {/* ✖ Close Button */}
+              <button
+                onClick={() => setShowModal(false)}
+                className="absolute top-2 right-2 text-white hover:text-gray-200 text-xl font-bold focus:outline-none"
+                aria-label="Close"
+              >
+                ✖
+              </button>
+
               <h2 className="text-2xl font-semibold mb-2">✅ Sent!</h2>
               <p>Your message has been delivered.</p>
             </div>
           </div>
         )}
+
       </div>
     </div>
   );
