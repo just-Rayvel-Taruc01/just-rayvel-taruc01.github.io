@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Rayvel Taruc — Developer Portfolio
 
-## Getting Started
+Welcome to my personal developer portfolio!  
+Built with **Next.js**, **Tailwind CSS**, and **TypeScript**, this project showcases my skills, experience, and projects as a developer and IT student.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo
+
+- 🔗 [GitHub Pages](https://just-rayvel-taruc01.github.io/)
+- 🔗 [Vercel Deployment](https://just-rayvel-taruc01-github-io.vercel.app/)
+
+---
+
+## 📸 Preview
+
+![Portfolio Screenshot](./public/preview.jpg) <!-- Replace with your actual screenshot if available -->
+
+---
+
+## 🛠 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Language**: TypeScript
+- **Forms**: [Formspree](https://formspree.io/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Animation**: [canvas-confetti](https://www.npmjs.com/package/canvas-confetti)
+- **Deployment**: GitHub Pages & Vercel
+
+---
+
+## 📂 Folder Structure
+
+```
+src/
+├── app/                 # Next.js app directory
+├── components/          # Reusable UI components
+│   ├── sections/        # About, Resume, Portfolio, Contact
+│   └── ui/              # Theme toggles, icons, etc.
+├── public/              # Static files like profile image
+└── styles/              # Global CSS and Tailwind variables
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Light/Dark theme toggle (custom variables)
+- Scroll-synced navigation with active link highlight
+- Contact form with validation, confetti, and modal
+- Responsive layout and card-based design
+- Deployed to both GitHub Pages & Vercel
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📥 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Clone the repo
+git clone https://github.com/just-Rayvel-Taruc01/just-Rayvel-Taruc01.github.io.git
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Navigate into the project folder
+cd just-Rayvel-Taruc01.github.io
 
-## Deploy on Vercel
+# Install dependencies
+npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Run the development server
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+
+This project is open-source and free to use for educational and portfolio purposes.
+
+---
+
+## 🙋‍♂️ Contact
+
+Feel free to reach out via the contact form on the website or email me directly at  
+📧 **rayvel.dev@gmail.com**
+
+---
+
+_Designed & built by **Rayvel Taruc**_

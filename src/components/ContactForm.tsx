@@ -60,7 +60,7 @@ export function ContactForm({ onResetForm }: { onResetForm?: () => void }) {
           placeholder="Your Message"
           required
           rows={4}
-          className="w-full p-3 mt-4 border border-[var(--secondary)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+          className="w-full p-3 border border-[var(--secondary)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
         />
 
         <button
@@ -102,15 +102,15 @@ export function ContactForm({ onResetForm }: { onResetForm?: () => void }) {
           >
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-2 right-3 text-gray-500 hover:text-gray-700 text-xl font-bold"
+              className="absolute top-2 right-3 text-paragraph hover:text-(--paragraph) text-xl font-bold"
               aria-label="Close"
             >
               ✖
             </button>
-            <h2 className="text-xl font-semibold mb-1 text-gray-800">
+            <h2 className="text-xl font-semibold mb-1 text-(--paragraph)">
               Message Sent
             </h2>
-            <p className="text-gray-600">Thanks for reaching out!</p>
+            <p className="text-(--paragraph)">Thanks for reaching out!</p>
           </div>
         </div>
       )}
