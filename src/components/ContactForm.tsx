@@ -100,17 +100,18 @@ export function ContactForm({ onResetForm }: { onResetForm?: () => void }) {
             className="[background:var(--accent-gradient)] rounded-lg p-6 shadow-xl text-center max-w-sm w-full relative"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* Modal Close Button */}
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-2 right-3 text-paragraph hover:text-(--paragraph) text-xl font-bold"
+              className="absolute top-2 right-3 text-paragraph hover:text-gray-400 text-xl font-bold"
               aria-label="Close"
             >
               ✖
             </button>
-            <h2 className="text-xl font-semibold mb-1 text-(--paragraph)">
+            <h2 className="text-xl font-semibold mb-1 text-paragraph">
               Message Sent
             </h2>
-            <p className="text-(--paragraph)">Thanks for reaching out!</p>
+            <p className="text-paragraph">Thanks for reaching out!</p>
           </div>
         </div>
       )}
