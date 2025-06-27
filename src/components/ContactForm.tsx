@@ -5,36 +5,21 @@ import React, { useState } from "react";
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    const form = e.currentTarget;
-    const data = new FormData(form);
-
-    try {
-      const res = await fetch("https://formsubmit.co/wipidawi%40mailgolem.com", {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
-      });
-
-      if (res.ok) {
-        setSubmitted(true);
-        form.reset();
-        setTimeout(() => setSubmitted(false), 4000);
-      } else {
-        alert("Something went wrong. Please try again.");
-      }
-    } catch (err) {
-      console.error("Form submit error:", err);
-      alert("Error sending message. Please try again later.");
-    }
+  const handleSubmit = () => {
+    // Let the form submit naturally
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 4000);
   };
 
   return (
     <div className="p-6 m-3">
       <div className="relative">
-        <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4 mt-6">
+        <form
+          action="https://formsubmit.co/rayvel.dev@gmail.com"
+          method="POST"
+          onSubmit={handleSubmit}
+          className="grid grid-cols-1 gap-4 mt-6"
+        >
           {/* Hidden FormSubmit config */}
           <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="box" />
