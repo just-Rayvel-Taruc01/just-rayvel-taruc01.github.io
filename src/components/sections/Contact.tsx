@@ -1,8 +1,7 @@
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
-import { ContactForm } from "../ContactForm";
+import { ContactFormWrapper } from "../ContactFormWrapper";
 
 export function Contact() {
-  
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 bg-[var(--card-bg)] rounded-lg shadow-md">
       {/* Contact Information */}
@@ -26,19 +25,17 @@ export function Contact() {
             </li>
             <li className="flex items-center gap-2 hover:text-[var(--accent)]">
               <FiMail />
-              <a href="mailto:rayvel.dev@gmail.com" className="">
-                rayvelm.taruc02@gmail.com
-              </a>
+              <a href="mailto:rayvel.dev@gmail.com">rayvelm.taruc02@gmail.com</a>
             </li>
             <li className="flex items-center gap-2">
-              <FiMapPin />San Luis, Pampanga
+              <FiMapPin /> San Luis, Pampanga
             </li>
           </ul>
         </div>
       </div>
-      {/* Contact Form */}
-      < ContactForm />
 
+      {/* Contact Form with theme handling */}
+      <ContactFormWrapper />
     </div>
   );
 }
