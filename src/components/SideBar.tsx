@@ -33,8 +33,8 @@ export function Sidebar() {
           </li>
           <li className="flex items-center gap-2 hover:text-[var(--accent)]">
             <FiMail />
-            <a href="mailto:rayvelm.taruc02@gmail.com" className="">
-              rayvelm.taruc02@gmail.com
+            <a href="mailto:rayvel.dev@gmail.com" className="">
+              rayvel.dev@gmail.com
             </a>
           </li>
           <li className="flex items-center gap-2">

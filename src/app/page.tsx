@@ -35,19 +35,19 @@ export default function Home() {
         <div className="flex-1 scroll-smooth lg:ml-76 ml-0">
           <Navigation />
 
-          <section id="about" className="mb-5">
+          <section id="about" className="mb-5 scroll-mt-6">
             <About />
           </section>
 
-          <section id="project" className="mb-5">
+          <section id="project" className="mb-5 scroll-mt-6">
             <Projects />
           </section>
 
-          <section id="resume" className="mb-5">
+          <section id="resume" className="mb-5 scroll-mt-6">
             <Resume />
           </section>
 
-          <section id="contact" className="mb-5">
+          <section id="contact" className="mb-5 scroll-mt-6">
             <Contact />
           </section>
         </div>

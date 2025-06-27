@@ -26,7 +26,7 @@ export function Contact() {
             </li>
             <li className="flex items-center gap-2 hover:text-[var(--accent)]">
               <FiMail />
-              <a href="mailto:rayvelm.taruc02@gmail.com" className="">
+              <a href="mailto:rayvel.dev@gmail.com" className="">
                 rayvelm.taruc02@gmail.com
               </a>
             </li>
