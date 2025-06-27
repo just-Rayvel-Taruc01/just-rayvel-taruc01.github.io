@@ -21,7 +21,7 @@ export function Sidebar() {
 
       {/* Contact Info */}
       <div className="">
-        <h2 className="text-3xl md:text-4xl lg:text-3xl font-bold text-[var(--headline)] 
+        <h2 className="text-4xl md:text-4xl lg:text-3xl font-bold text-[var(--headline)] 
                        text-center lg:text-center md:text-start pb-4 md:pb-2 lg:pb-4"
         >Rayvel Taruc</h2>
 

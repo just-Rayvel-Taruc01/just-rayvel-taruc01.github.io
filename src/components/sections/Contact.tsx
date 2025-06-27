@@ -25,7 +25,7 @@ export function Contact() {
             </li>
             <li className="flex items-center gap-2 hover:text-[var(--accent)]">
               <FiMail />
-              <a href="mailto:rayvel.dev@gmail.com">rayvelm.taruc02@gmail.com</a>
+              <a href="mailto:rayvel.dev@gmail.com">rayvel.dev@gmail.com</a>
             </li>
             <li className="flex items-center gap-2">
               <FiMapPin /> San Luis, Pampanga
