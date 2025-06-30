@@ -1,4 +1,4 @@
-import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
+import { FiMail, FiMapPin } from "react-icons/fi";
 import { ContactFormWrapper } from "../ContactFormWrapper";
 
 export function Contact() {
@@ -20,9 +20,6 @@ export function Contact() {
             You can contact me through the form below or directly via email.
           </p>
           <ul className="space-y-4">
-            <li className="flex items-center gap-2">
-              <FiPhone /> (+63) 928 227 7066
-            </li>
             <li className="flex items-center gap-2 hover:text-[var(--accent)]">
               <FiMail />
               <a href="mailto:rayvel.dev@gmail.com">rayvel.dev@gmail.com</a>

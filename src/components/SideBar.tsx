@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
+import { FiMail, FiMapPin } from "react-icons/fi";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { DarkModeToggle } from "@/components/ui/DarkModeToggle";
 
@@ -28,9 +28,6 @@ export function Sidebar() {
         <div className="text-sm text-center md:text-start lg:text-center pb-3 lg:border-b-1 md:border-b-0 border-b-1">Developer | UX/UI Designer</div>
 
         <ul className="mt-3 md:mt-0 lg:mt-3 lg:space-y-3 md:space-y-1 space-y-2 text-sm">
-          <li className="flex items-center gap-2">
-            <FiPhone /> <span>(+63) 928 227 7066</span>
-          </li>
           <li className="flex items-center gap-2 hover:text-[var(--accent)]">
             <FiMail />
             <a href="mailto:rayvel.dev@gmail.com" className="">
