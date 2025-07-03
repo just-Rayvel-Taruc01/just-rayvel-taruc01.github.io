@@ -4,6 +4,8 @@ import { FiMail, FiMapPin } from "react-icons/fi";
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { DarkModeToggle } from "@/components/ui/DarkModeToggle";
 
+
+
 export function Sidebar() {
   return (
     <div className="flex flex-col md:flex-row lg:flex-col p-4 text-[var(--body)]
@@ -21,9 +23,24 @@ export function Sidebar() {
 
       {/* Contact Info */}
       <div className="">
-        <h2 className="text-4xl md:text-4xl lg:text-3xl font-bold text-[var(--headline)] 
-                       text-center lg:text-center md:text-start pb-4 md:pb-2 lg:pb-4"
-        >Rayvel Taruc</h2>
+        {/* Greeting */}
+
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full 
+                        bg-(--contact-card-bg) mb-3">
+            <span className="inline-block w-2 h-2 rounded-full bg-(--headline) animate-pulse"/>
+            <span className="text-xs font-semibold">Hello, I am</span>
+            
+        </div>
+        
+        {/* Name */}
+        <h2
+          className="
+            text-4xl font-bold text-transparent bg-clip-text 
+            bg-[image:var(--accent-gradient)] animate-shimmer
+          "
+        >
+          Rayvel Taruc
+        </h2>
 
         <div className="text-sm text-center md:text-start lg:text-center pb-3 lg:border-b-1 md:border-b-0 border-b-1">Developer | UX/UI Designer</div>
 

@@ -10,10 +10,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+@keyframes shimmer {
+  0% {
+    background-position: -200% -200%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+.animate-shimmer {
+  background-size: 300% 100%;
+  animation: shimmer 8s ease-in-out infinite;
+}
+
+
 /* Light Theme */
 :root {
-  --background: #f9f9f9;
-  --card-bg: #ffffff;
+  --background: #f8f8f8;
+  --card-bg: #fcfcfce9;
   --card-tag-bg: #fae588;
 
   --headline: #0f0e17;
@@ -41,7 +56,7 @@ body {
   --card-tag-text: #fffffe;
   --card-paragraph: #94a1b2;
 
-  --contact-card-bg: #222024;
+  --contact-card-bg: #222222;
   --accent-gradient: linear-gradient(135deg, #00cec9, #6c5ce7); 
 }
 

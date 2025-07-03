@@ -9,19 +9,25 @@ module.exports = {
   ],
    theme: {
     extend: {
+      keyframes: {
+        shimmer: {
+          '0%': { backgroundPosition: '-200% -200%' },
+          '100%': { backgroundPosition: '200% 200%' },
+        },
+      },
       colors: {
         background: "var(--background)",
+        headline: "var(--headline)",
+        paragraph: "var(--paragraph)",
+        accent: "var(--accent)",
+        accentgradient: "var(--accent-gradient)",
+        contactCardBg: "var(--contact-card-bg)",
         card: {
           bg: "var(--card-bg)",
           tagBg: "var(--card-tag-bg)",
           tagText: "var(--card-tag-text)",
           paragraph: "var(--card-paragraph)",
         },
-        headline: "var(--headline)",
-        paragraph: "var(--paragraph)",
-        accent: "var(--accent)",
-        accentgradient: "var(--accent-gradient)",
-        contactCardBg: "var(--contact-card-bg)"
       },
     },
   },

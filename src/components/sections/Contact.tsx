@@ -12,7 +12,7 @@ export function Contact() {
 
         {/* Content */}
         <div className="relative z-10">
-          <h2 className="text-gradient text-4xl font-extrabold mb-3">Get in touch</h2>
+          <h2 className="text-gradient text-3xl font-extrabold mb-3">Get in touch</h2>
           <p className="text-base lg:text-md mb-4">
             I’m always open to discussing new opportunities, creative projects, or collaborations.
             Whether you have a question, want to work together, or just want to say hello—feel free to reach out!
