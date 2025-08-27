@@ -5,7 +5,6 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { DarkModeToggle } from "@/components/ui/DarkModeToggle";
 
 
-
 export function Sidebar() {
   return (
     <div className="flex flex-col md:flex-row lg:flex-col p-4 text-[var(--body)]
@@ -27,7 +26,7 @@ export function Sidebar() {
 
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full 
                         bg-(--contact-card-bg) mb-3">
-            <span className="inline-block w-2 h-2 rounded-full bg-(--headline) animate-pulse"/>
+            <span className="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse"/>
             <span className="text-xs font-semibold">Hello, I am</span>
             
         </div>

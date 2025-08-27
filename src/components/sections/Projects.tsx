@@ -13,6 +13,7 @@ export function Projects() {
         <div className="border border-[var(--secondary)] rounded-lg p-4 mt-4 hover:[background:var(--accent-gradient)] hover:text-white transition-all duration-300">
           <h3 className="text-xl font-semibold">Portfolio Site</h3>
           <p className="text-base lg:text-sm">This portfolio built using Next.js and Tailwind CSS.</p>
+          {/* Tech Stack Icon */}
           <div className="flex flex-wrap items-center gap-2 mt-2">
             <span className="flex items-center gap-1 py-1 rounded-full text-sm">
               <FaReact className="text-cyan-400" /> <span className="hidden sm:inline">React</span>
@@ -29,6 +30,7 @@ export function Projects() {
         <div className="border border-[var(--secondary)] rounded-lg p-4 mt-4 hover:[background:var(--accent-gradient)] hover:text-white transition-all duration-300">
           <h3 className="text-xl font-semibold">Blog Platform</h3>
           <p className="text-base lg:text-sm">A blogging platform with user authentication and post management.</p>
+          {/* Tech Stack Icon */}
           <div className="flex flex-wrap gap-2 mt-2">
             <span className="flex items-center gap-1 py-1 rounded-full text-sm">
               <FaReact className="text-cyan-400" /> <span className="hidden sm:inline">React</span>
@@ -48,6 +50,7 @@ export function Projects() {
             A dynamic full-stack web application for managing and showcasing adoptable pets, built with Node.js, Express, MySQL, EJS, and Bootstrap.
             A full-stack application with user authentication and pet management.
           </p>
+          {/* Tech Stack Icon */}
           <div className="flex flex-wrap gap-2 mt-2">
             <span className="flex items-center gap-1 py-1 rounded-full text-sm">
               <SiBootstrap className="text-purple-600" /> <span className="hidden sm:inline">Bootstrap</span>

@@ -7,7 +7,7 @@ export function Resume() {
     <div className="bg-[var(--card-bg)] p-6 rounded-lg shadow-md">
       <h2 className="text-3xl font-bold mb-4 text-[var(--headline)]">Resume</h2>
 
-      {/* xperience */}
+      {/* Experience */}
       <div className="mb-8">
         <h3 className="text-xl font-semibold mb-6 flex items-center gap-3">
           <FaBriefcase size={24} className="text-[var(--accent)]" />
@@ -20,14 +20,14 @@ export function Resume() {
             <div className='flex items-start gap-4'>
               <Image
                 src="/logo/pelco.png"
-                alt="Pampanga Electric Cooperative II IT Department"
+                alt="Pampanga Electric Cooperative I IT Department"
                 width={50}  
                 height={50}
                 className="inline-block rounded-full"
               />
               <div>
                 <p className="font-semibold">IT Intern</p>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-400">
                   Pampanga Electric Cooperative I – IT Department (February 2025 – May 2025)
                 </p>
               </div>  
@@ -57,7 +57,7 @@ export function Resume() {
               />
               <div>
                 <p className="font-semibold">Bachelor of Science in Information Technology</p>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-400">
                   Don Honorio Ventura State University – Candaba Campus (2021–2025)
                 </p>
               </div>
@@ -77,7 +77,7 @@ export function Resume() {
               />
               <div>
                 <p className="font-semibold">Senior High School – General Academic Strand (GAS)</p>
-                <p className="text-sm text-gray-600">
+                <p className="text-sm text-gray-400">
                   Emigdio A. Bondoc High School (2019–2021)
                 </p>
               </div>
