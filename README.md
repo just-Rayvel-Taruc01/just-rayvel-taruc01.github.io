@@ -34,12 +34,12 @@ Built with Next.js, Tailwind CSS, and TypeScript, this project showcases my skil
 
 ```
 src/
-├── app/                 # Next.js app directory
+├── app/                 # Next.js app directory (routing, pages)
 ├── components/          # Reusable UI components
-│   ├── sections/        # About, Resume, Portfolio, Contact
-│   └── ui/              # Theme toggles, icons, etc.
-├── public/              # Static files like profile image
-└── styles/              # Global CSS and Tailwind variables
+│   ├── sections/        # Page sections: About, Resume, Portfolio, Contact
+│   └── ui/              # UI elements: theme toggles, icons, etc.
+├── public/              # Static assets (images, preview, favicon)
+└── styles/              # Global CSS, Tailwind config
 ```
 
 ---
