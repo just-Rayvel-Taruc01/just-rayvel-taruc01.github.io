@@ -45,7 +45,7 @@ export function Sidebar() {
             className="text-base font-medium text-center md:text-left lg:text-center 
                       pb-3 border-b border-gray-300 dark:border-gray-700"
           >
-            IT Graduate | Web Developer
+            IT Enthusiast | Web Developer
           </div>
 
         <ul className="mt-3 md:mt-0 lg:mt-3 lg:space-y-3 md:space-y-1 space-y-2 text-sm">
