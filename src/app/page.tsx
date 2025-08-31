@@ -39,12 +39,12 @@ export default function Home() {
             <About />
           </section>
 
-          <section id="project" className="mb-5 scroll-mt-6">
-            <Projects />
-          </section>
-
           <section id="resume" className="mb-5 scroll-mt-6">
             <Resume />
+          </section>
+
+          <section id="projects" className="mb-5 scroll-mt-6">
+            <Projects />
           </section>
 
           <section id="contact" className="mb-5 scroll-mt-6">

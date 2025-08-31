@@ -10,6 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Animation for the Name */
 @keyframes shimmer {
   0% {
     background-position: -200% -200%;
@@ -25,28 +26,28 @@ body {
 }
 
 
-/* Light Theme */
+/* Light Theme - Cream Variant */
 :root {
-  --background: #f8f8f8;
-  --card-bg: #fcfcfce9;
-  --card-tag-bg: #fae588;
+  --background: #fdfcf7;           /* Soft cream, easy on eyes */
+  --card-bg: #ffffffd9;            /* Slight transparent white for cards */
+  --card-tag-bg: #f6d78b;          /* Warm golden highlight */
 
-  --headline: #0f0e17;
-  --paragraph: #2e2f3e;
-  --accent: #6c5ce7; 
+  --headline: #2d2a26;             /* Rich warm brown/black for contrast */
+  --paragraph: #4a4a45;            /* Neutral gray-brown, softer than pure gray */
+  --accent: #d17a22;               /* Warm orange accent for buttons/links */
 
-  --card-tag-text: #0f0e17;
-  --card-paragraph: #2e2f3e;
-  
-  --contact-card-bg: #eceaea;
-  --accent-gradient: linear-gradient(135deg, #89aae3, #fbc2eb);
+  --card-tag-text: #2d2a26;        /* Strong contrast on tags */
+  --card-paragraph: #4a4a45;
+
+  --contact-card-bg: #f7f3eb;      /* Warm cream-gray background for cards */
+  --accent-gradient: linear-gradient(135deg, #e4a672, #d17a22);
 }
 
 /* Dark Theme */
 .dark {
-  --background: #242629;
-  --card-bg: #16161a;
-  --card-tag-bg: #5938bc;
+  --background: #1e1c1a;          
+  --card-bg: #2b2825;              
+  --card-tag-bg: #a3622b; 
 
   --headline: #fffffe;
   --paragraph: #94a1b2;
@@ -65,4 +66,29 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+@keyframes blobMorph {
+  0% {
+    border-radius: 42% 58% 70% 30% / 42% 35% 65% 58%;
+  }
+  20% {
+    border-radius: 55% 45% 60% 40% / 40% 65% 35% 60%;
+  }
+  40% {
+    border-radius: 60% 40% 35% 65% / 55% 30% 70% 45%;
+  }
+  60% {
+    border-radius: 50% 50% 65% 35% / 35% 55% 45% 65%;
+  }
+  80% {
+    border-radius: 65% 35% 55% 45% / 60% 40% 35% 65%;
+  }
+  100% {
+    border-radius: 42% 58% 70% 30% / 42% 35% 65% 58%;
+  }
+}
+
+.animate-blobMorph {
+  animation: blobMorph 15s ease-in-out infinite;
 }

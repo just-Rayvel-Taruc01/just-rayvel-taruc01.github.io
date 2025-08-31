@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const sections = ["about", "project", "resume", "contact"];
+const sections = ["about", "resume", "projects", "contact"];
 
 export function Navigation() {
   const [active, setActive] = useState("");

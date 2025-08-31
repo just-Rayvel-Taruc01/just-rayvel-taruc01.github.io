@@ -10,16 +10,15 @@ export function Sidebar() {
     <div className="flex flex-col md:flex-row lg:flex-col p-4 text-[var(--body)]
                     gap-6 md:gap-12 lg:gap-4 justify-center items-center">
       {/* Profile */}
-      <div className="flex items-center">
+      <div className="flex items-center justify-center">
         <Image
           src="/profile.jpg"
           alt="Profile"
           width={150}
           height={150}
-          className="rounded-full shadow-lg mx-auto md:w-45 md:h-45"
-        />
+          className="shadow-lg mx-auto md:w-45 md:h-45 animate-blobMorph border-4 border-(--accent)"
+        />  
       </div>
-
       {/* Contact Info */}
       <div className="">
         {/* Greeting */}
@@ -36,12 +35,18 @@ export function Sidebar() {
           className="
             text-4xl font-bold text-transparent bg-clip-text 
             bg-[image:var(--accent-gradient)] animate-shimmer
-          "
+            mb-3
+            "
         >
           Rayvel Taruc
         </h2>
 
-        <div className="text-sm text-center md:text-start lg:text-center pb-3 lg:border-b-1 md:border-b-0 border-b-1">Developer | UX/UI Designer</div>
+        <div
+            className="text-base font-medium text-center md:text-left lg:text-center 
+                      pb-3 border-b border-gray-300 dark:border-gray-700"
+          >
+            IT Graduate | Web Developer
+          </div>
 
         <ul className="mt-3 md:mt-0 lg:mt-3 lg:space-y-3 md:space-y-1 space-y-2 text-sm">
           <li className="flex items-center gap-2 hover:text-[var(--accent)]">
