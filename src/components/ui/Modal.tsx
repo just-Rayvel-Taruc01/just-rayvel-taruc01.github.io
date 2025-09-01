@@ -98,6 +98,7 @@ export function Modal({ isOpen, onClose, title, content, image, repo }: ModalPro
 
   return (
     <div
+
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
       role="dialog"
       aria-modal="true"
@@ -106,7 +107,12 @@ export function Modal({ isOpen, onClose, title, content, image, repo }: ModalPro
     >
       <div
         ref={modalRef}
-        className={`bg-white dark:bg-[var(--card-bg)] p-0 rounded-lg shadow-lg max-w-3xl w-full h-[80vh] flex flex-col overflow-hidden transform transition-all duration-300 ${
+        className={`
+          bg-white dark:bg-[var(--card-bg)] p-0 rounded-lg shadow-lg 
+          w-[95%] sm:w-[90%] md:w-[80%] lg:max-w-3xl 
+          h-[90vh] sm:h-[85vh] md:h-[80vh] 
+          flex flex-col overflow-hidden 
+          transform transition-all duration-300{
           isOpen ? "opacity-100 scale-100" : "opacity-0 scale-95"
         }`}
         onClick={(e) => e.stopPropagation()}
@@ -128,16 +134,16 @@ export function Modal({ isOpen, onClose, title, content, image, repo }: ModalPro
         {/* Scrollable Body (now includes image + content) */}
         <div className="flex-1 overflow-y-auto prose dark:prose-invert text-sm">
           {image && (
-            <div className="relative w-full h-64">
-              <Image
-                src={image}
-                alt={title}
-                fill
-                className="object-cover"
-                sizes="100vw"
-                style={{ objectFit: "cover" }}
-              />
-            </div>
+            <div className="relative w-full h-48 sm:h-64 md:h-72 lg:h-80">
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-cover rounded-t-lg"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px"
+              priority
+            />
+          </div>
           )}
 
           <div className="p-6">
