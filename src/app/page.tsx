@@ -1,7 +1,7 @@
-import { About } from "@/components/sections/About";
-import { Resume } from "@/components/sections/Resume";
-import { Projects } from "@/components/sections/Projects";
-import { Contact } from "@/components/sections/Contact";
+import { About } from "@/components/sections/about/About";
+import { Resume } from "@/components/sections/resume/Resume";
+import { Projects } from "@/components/sections/projects/Projects";
+import { Contact } from "@/components/sections/contact/Contact";
 import { Sidebar } from "@/components/SideBar";
 import { Navigation } from "@/components/Navigation";
 
@@ -22,12 +22,12 @@ export default function Home() {
         <div className="absolute bottom-[-100px] left-[50%] translate-x-[-10%] w-[600px] h-[600px] rounded-full blur-[160px] 
                         bg-[#fceff9] dark:bg-[#3c3f75]/20 z-[1]" />
       </div>
-
-      <main className="relative flex flex-col max-w-7xl xl:max-w-11/12 mx-auto gap-5 p-4 md:p-6 z-10">
+      
+      <main className="relative flex flex-col max-w-7xl xl:max-w-11/12 mx-auto 
+                       gap-5 p-4 md:p-6 z-10">
+        
         {/* Sidebar */}
-        <aside className="lg:fixed top-0 lg:h-11/12 
-                          lg:w-72 rounded-xl overflow-y-auto shadow-md lg:top-5 bg-[var(--card-bg)]
-                          md:w-full md:h-auto">
+        <aside className="">
           <Sidebar />
         </aside>
 

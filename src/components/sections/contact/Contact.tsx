@@ -1,5 +1,5 @@
 import { FiMail, FiMapPin } from "react-icons/fi";
-import { ContactFormWrapper } from "../ContactFormWrapper";
+import { ContactFormWrapper } from "./ContactFormWrapper";
 
 export function Contact() {
   return (

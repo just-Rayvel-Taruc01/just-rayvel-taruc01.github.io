@@ -1,6 +1,6 @@
 import { FaBook, FaBriefcase } from 'react-icons/fa';
 import Image from 'next/image';
-import Skills from '../ui/Skills';
+import Skills from '../../ui/Skills';
 
 export function Resume() {
   return (

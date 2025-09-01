@@ -9,7 +9,7 @@ import {
   SiMysql, 
   SiEjs 
 } from "react-icons/si";
-import { Modal } from "../ui/Modal";
+import { Modal } from "@/components/ui/Modal";
 
 const projects = [
   {
