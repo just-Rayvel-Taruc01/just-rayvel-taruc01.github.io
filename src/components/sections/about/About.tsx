@@ -64,7 +64,6 @@ export function About() {
           viewport={{ once: true }}
           className="mb-8"
         >
-          <h3 className="text-xl font-semibold mb-4 text-headline">Highlights</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {[
               { stat: "5+", label: "Projects Completed", link: "#projects" },

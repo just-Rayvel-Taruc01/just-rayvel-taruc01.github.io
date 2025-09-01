@@ -41,28 +41,81 @@ export function ContactForm({ onResetForm }: { onResetForm?: () => void }) {
         {/* Honeypot */}
         <input type="text" name="_honey" style={{ display: "none" }} />
 
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          required
-          className="p-3 border border-[var(--secondary)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          required
-          className="p-3 border border-[var(--secondary)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
-        />
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          required
-          rows={4}
-          className="w-full p-3 border border-[var(--secondary)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
-        />
+        {/* Name Input */}
+        <div className="relative w-full">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder=" "
+            required
+            className="peer w-full p-3 pt-5 rounded-lg border border-gray-300
+                      focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+          />
+          <label
+            htmlFor="name"
+            className="absolute left-3 top-1 text-gray-400 text-sm transition-all duration-200
+                      peer-placeholder-shown:text-gray-400 
+                      peer-placeholder-shown:text-base
+                      peer-focus:top-1 
+                      peer-focus:text-sm 
+                      peer-placeholder-shown:top-4.5
+                      peer-focus:text-[var(--accent)]" >
+            Your Name
+          </label>
+        </div>
 
+        {/* Email Input */}
+        <div className="relative w-full">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder=" "
+            required
+            className="peer w-full p-3 pt-5 rounded-lg border border-gray-300
+                      focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+          />
+          <label
+            htmlFor="email"
+            className="absolute left-3 top-1 text-gray-400 text-sm transition-all duration-200
+                      peer-placeholder-shown:text-gray-400 
+                      peer-placeholder-shown:text-base
+                      peer-focus:top-1 
+                      peer-focus:text-sm 
+                      peer-placeholder-shown:top-4.5
+                      peer-focus:text-[var(--accent)]"
+          >
+            Your Email
+          </label>
+        </div>
+
+        {/* Message Textarea */}
+        <div className="relative w-full">
+          <textarea
+            name="message"
+            id="message"
+            placeholder=" "
+            required
+            rows={4}
+            className="peer w-full p-3 pt-5 rounded-lg border border-gray-300
+                      focus:outline-none focus:ring-2 focus:ring-[var(--accent)]"
+          />
+          <label
+            htmlFor="message"
+            className="absolute left-3 top-1 text-gray-400 text-sm transition-all duration-200
+                      peer-placeholder-shown:text-gray-400 
+                      peer-placeholder-shown:text-base
+                      peer-focus:top-1 
+                      peer-focus:text-sm 
+                      peer-placeholder-shown:top-4
+                      peer-focus:text-[var(--accent)]"
+          >
+            Your Message
+          </label>
+        </div>
+
+        {/* Submit Button */}
         <button
           type="submit"
           disabled={state.submitting}
@@ -74,22 +127,8 @@ export function ContactForm({ onResetForm }: { onResetForm?: () => void }) {
         >
           {state.submitting ? "Sending..." : "Send Message"}
         </button>
-
-        {Array.isArray(state.errors) && state.errors.length > 0 && (
-          <div
-            className="text-red-500 mt-2"
-            role="alert"
-            aria-live="assertive"
-          >
-            <p className="font-semibold">❌ Something went wrong:</p>
-            <ul className="list-disc ml-5">
-              {state.errors.map((error, idx) => (
-                <li key={idx}>{error.message}</li>
-              ))}
-            </ul>
-          </div>
-        )}
       </form>
+
 
       {showModal && (
         <div
