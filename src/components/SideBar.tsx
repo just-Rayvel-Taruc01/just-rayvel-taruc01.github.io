@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiMail, FiMapPin } from "react-icons/fi";
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { DarkModeToggle } from "@/components/ui/DarkModeToggle";
 
 // Motion variants
@@ -125,16 +125,6 @@ export function Sidebar() {
                 className="hover:text-[var(--accent)]"
               >
                 <FaGithub size={22} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/your_actual_handle"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-[var(--accent)]"
-              >
-                <FaXTwitter size={22} />
               </a>
             </li>
             <li>

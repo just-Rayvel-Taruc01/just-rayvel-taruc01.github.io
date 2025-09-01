@@ -33,13 +33,53 @@ Built with Next.js, Tailwind CSS, and TypeScript, this project showcases my skil
 ## 📂 Folder Structure
 
 ```
-src/
-├── app/                 # Next.js app directory (routing, pages)
-├── components/          # Reusable UI components
-│   ├── sections/        # Page sections: About, Resume, Portfolio, Contact
-│   └── ui/              # UI elements: theme toggles, icons, etc.
-├── public/              # Static assets (images, preview, favicon)
-└── styles/              # Global CSS, Tailwind config
+just-rayvel-taruc01.github.io/
+├── public/                        # Static assets (images, logo, certificates, preview)
+│   ├── preview.jpg
+│   ├── profile.JPG
+│   ├── certificate/
+│   ├── images/
+│   └── logo/
+├── src/
+│   ├── app/                       # Next.js app directory (routing, global styles, layout)
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── hooks/
+│   │   │   └── useDarkMode.ts
+│   │   └── lib/
+│   │       ├── theme-provider.tsx
+│   │       └── theme-script.tsx
+│   │       └── utils/
+│   │           └── githubApi.tsx
+│   ├── components/                # Reusable UI and page section components
+│   │   ├── Navigation.tsx
+│   │   ├── SideBar.tsx
+│   │   ├── sections/
+│   │   │   ├── about/
+│   │   │   │   └── About.tsx
+│   │   │   ├── contact/
+│   │   │   │   ├── Contact.tsx
+│   │   │   │   ├── ContactForm.tsx
+│   │   │   │   └── ContactFormWrapper.tsx
+│   │   │   ├── projects/
+│   │   │   │   └── Projects.tsx
+│   │   │   ├── resume/
+│   │   │   │   └── Resume.tsx
+│   │   └── ui/
+│   │       ├── DarkModeToggle.tsx
+│   │       ├── Modal.tsx
+│   │       └── Skills.tsx
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── postcss.config.js
+├── postcss.config.mjs
+├── README.md
+├── tailwind.config.js
+├── tsconfig.json
 ```
 
 ---

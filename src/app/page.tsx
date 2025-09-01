@@ -23,7 +23,7 @@ export default function Home() {
                         bg-[#fceff9] dark:bg-[#3c3f75]/20 z-[1]" />
       </div>
       
-      <main className="relative flex flex-col max-w-7xl xl:max-w-11/12 mx-auto 
+      <main className="relative flex flex-col max-w-7lg xl:max-w-11/12 mx-auto 
                        gap-5 p-4 md:p-6 z-10">
         
         {/* Sidebar */}
