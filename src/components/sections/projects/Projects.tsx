@@ -2,12 +2,16 @@
 
 import { useState } from "react";
 import { FaReact, FaNodeJs, FaUserShield } from "react-icons/fa";
-import { 
-  SiNextdotjs, 
-  SiTailwindcss, 
-  SiBootstrap, 
-  SiMysql, 
-  SiEjs 
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiBootstrap,
+  SiMysql,
+  SiEjs,
+  SiPython,
+  SiPostgresql,
+  SiStreamlit,
+  SiPlotly,
 } from "react-icons/si";
 import { Modal } from "@/components/ui/Modal";
 
@@ -39,15 +43,31 @@ const projects = [
     ],
   },
   {
-    title: "Blog Platform",
-    description: "A blogging platform with user authentication and post management.",
-    readme: `# Blog Platform\n\nFull-stack blogging app with authentication and CRUD posts.\n\nFeatures:\n- User login/signup\n- Create, edit, delete posts\n- Responsive layout`,
-    image: "/images/blog-demo.png",
-    repo: "https://github.com/yourusername/blog-platform",
+    title: "IT Asset Inventory Dashboard",
+    description: "Centralized dashboard to track and manage IT assets (devices, software, licenses) with ETL and real-time visualization.",
+    readme: `# IT Asset Inventory Dashboard
+
+  Python-based dashboard with PostgreSQL backend, ETL scripts, and Streamlit + Plotly frontend.
+
+  ## Features
+  - Import asset data (CSV/Excel, AD/LDAP, network scans)
+  - Searchable inventory with filtering and lifecycle tracking
+  - License expiration alerts
+  - Interactive dashboard with charts (device distribution, OS, licenses, hardware age)
+
+  ## Setup
+  1. Install Python 3.8+
+  2. pip install -r requirements.txt
+  3. Run ETL scripts (etl/etl_csv.py, etl/etl_ldap.py, etl/etl_nmap.py)
+  4. streamlit run dashboard/app.py
+  `,
+    image: "/images/it-asset-dashboard.png",
+    repo: "https://github.com/just-Rayvel-Taruc01/it-asset-inventory-dashboard",
     tech: [
-      { icon: <FaReact className="text-cyan-400" />, name: "React" },
-      { icon: <SiNextdotjs />, name: "Next.js" },
-      { icon: <SiTailwindcss className="text-teal-500" />, name: "Tailwind CSS" },
+      { icon: <SiPython className="text-yellow-400" />, name: "Python" },
+      { icon: <SiPostgresql className="text-sky-600" />, name: "PostgreSQL" },
+      { icon: <SiStreamlit className="text-red-500" />, name: "Streamlit" },
+      { icon: <SiPlotly className="text-blue-400" />, name: "Plotly" },
     ],
   },
 ];

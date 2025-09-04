@@ -99,7 +99,7 @@ export function Resume() {
               
             </div>
             {/* Bullet points with spacing */}
-                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-500">
                     <li>Provided technical support for hardware and software issues within the office environment</li>
                     <li>Supported the IT team in updating internal documentation and asset inventory</li>
                     <li>Assisted in network troubleshooting and system maintenance tasks</li>
@@ -141,7 +141,7 @@ export function Resume() {
                 <span className="w-20 font-semibold text-[var(--accent)]">2025</span>
                 <span>🎓 Graduated</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start gap-2 md:gap-12">
                 <span className="w-20 font-semibold">2024</span>
                 <span>
                   📌 Capstone Project: <span className="font-medium">AutoCompost</span> — The Design and Development of an Automated Composting Machine with Advanced Features to Transform Vegetable Waste into Organic Fertilizer
