@@ -32,7 +32,7 @@ Built with Next.js, Tailwind CSS, and TypeScript, this project showcases my skil
 
 ## 📂 Folder Structure
 
-```
+```bash
 just-rayvel-taruc01.github.io/
 ├── public/                        # Static assets (images, logo, certificates, preview)
 │   ├── preview.jpg

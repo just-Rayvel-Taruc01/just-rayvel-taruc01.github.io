@@ -20,7 +20,7 @@ const projects = [
     title: "Portfolio Site",
     description: "This portfolio built using Next.js and Tailwind CSS.",
     readme: `# Portfolio Site\n\nThis is my personal portfolio built with Next.js and Tailwind CSS.\n\nFeatures:\n- Responsive design\n- Modern UI\n- Showcases my work.`,
-    image: "/images/portfolio-demo.png",
+    image: "/images/portfolio-demo.jpg",
     repo: "https://github.com/just-Rayvel-Taruc01/just-rayvel-taruc01.github.io",
     tech: [
       { icon: <FaReact className="text-cyan-400" />, name: "React" },

@@ -134,16 +134,16 @@ export function Modal({ isOpen, onClose, title, content, image, repo }: ModalPro
         {/* Scrollable Body (now includes image + content) */}
         <div className="flex-1 overflow-y-auto prose dark:prose-invert text-sm">
           {image && (
-            <div className="relative w-full h-48 sm:h-64 md:h-72 lg:h-80">
-            <Image
-              src={image}
-              alt={title}
-              fill
-              className="object-cover rounded-t-lg"
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px"
-              priority
-            />
-          </div>
+            <div className="relative w-full aspect-[16/9]">
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="object-cover rounded-t-lg"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 768px"
+                priority
+              />
+            </div>
           )}
 
           <div className="p-6">
