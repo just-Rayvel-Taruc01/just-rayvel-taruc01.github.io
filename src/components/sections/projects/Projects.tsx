@@ -32,7 +32,7 @@ const projects = [
     title: "Pet Adoption App",
     description: "A dynamic full-stack app for managing adoptable pets.",
     readme: `# Pet Adoption App\n\nBuilt with Node.js, Express, MySQL, EJS, and Bootstrap.\n\nFeatures:\n- User authentication\n- Add & manage pets\n- Bootstrap UI`,
-    image: "/images/pet-demo.png",
+    image: "/images/furr-friend-demo.png",
     repo: "https://github.com/just-Rayvel-Taruc01/Furr-Friend-adaption-website",
     tech: [
       { icon: <SiBootstrap className="text-purple-600" />, name: "Bootstrap" },
